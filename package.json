@@ -1,12 +1,14 @@
 {
   "name": "utmsauce",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "https://richardschwabe.github.io/utmsauce-demo/",
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "dateformat": "^4.4.1",
+    "foundation-sites": "^6.6.3",
     "react": "^17.0.1",
     "react-datepicker": "^3.3.0",
     "react-dom": "^17.0.1",
@@ -37,7 +39,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "electron": "^11.1.1"
-  }
+  "devDependencies": {}
 }

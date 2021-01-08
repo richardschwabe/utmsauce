@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+
+import "foundation-sites/dist/css/foundation.min.css"
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 import dateFormat from "dateformat";
+
 
 function App() {
   const shareConfig = [
@@ -97,6 +100,7 @@ function App() {
   return (
     <div className="ui container">
       <h1>URL</h1>
+      <p>Enter URL of the campaign you want users to visit.</p>
       <div className="ui input fluid">
         <input
           onChange={handleUrlChange}
@@ -106,6 +110,7 @@ function App() {
         />
       </div>
       <h2>What is the campaign name?</h2>
+      <p>Enter the campaign name that you want to use to track.</p>
       <div className="ui input fluid">
         <input
           type="text"
@@ -116,7 +121,12 @@ function App() {
       </div>
 
       <h2>Choose Campaign Source & Medium</h2>
-      <div className="ui form">{sharePlaces}</div>
+      <p>Choose any of the source mediums, the links will automatically hold the source and medium settings according to your selection.</p>
+      <div className="ui form">
+        <div className="">
+        {sharePlaces}
+        </div>
+        </div>
 
       <h2>When will the campaign run?</h2>
       <DatePicker
