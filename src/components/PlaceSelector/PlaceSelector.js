@@ -1,6 +1,8 @@
 import React from 'react';
 import "./PlaceSelector.scss"
 
+import  { SocialIcon } from "react-social-icons"
+
 import shareConfig from "../../shareplaces.json"
 
 export default function PlaceSelector(props) {
@@ -10,17 +12,20 @@ export default function PlaceSelector(props) {
       let val = `${i.name.toLowerCase()}-${place.toLowerCase()}`;
 
       return (
-        <div className="inline field" key={val}>
+        <li key={val}>
           <input type="checkbox" onClick={() => props.toggleItem(val)} />
           <label className="ui checkbox">{place}</label>
-        </div>
+        </li>
       );
     });
 
     return (
-      <div className={`cell medium-4 ${i.name}`} key={i.name}>
-        <h4>{i.name.toUpperCase()}</h4>
+      <div className={`cell medium-4 place place-${i.icon}`} key={i.name}>
+        <h4><SocialIcon network={i.icon} /> {i.name.toUpperCase()}</h4>
+        <ul className="">
         {places}
+        </ul>
+        
       </div>
     );
   });

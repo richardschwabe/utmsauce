@@ -1,22 +1,27 @@
 [
   {
     "name": "Facebook",
+    "icon": "facebook",
     "places": ["Post", "Story", "Ad"]
   },
   {
     "name": "Instagram",
+    "icon": "instagram",
     "places": ["Story", "Profile"]
   },
   {
     "name": "Newsletter",
+    "icon": "email",
     "places": ["Content", "Footer", "Header"]
   },
   {
     "name": "Youtube",
+    "icon": "youtube",
     "places": ["Description"]
   },
   {
     "name": "Twitter",
+    "icon": "twitter",
     "places": ["Tweet"]
   }
 ]
