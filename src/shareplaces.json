@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Facebook",
+    "places": ["Post", "Story", "Ad"]
+  },
+  {
+    "name": "Instagram",
+    "places": ["Story", "Profile"]
+  },
+  {
+    "name": "Newsletter",
+    "places": ["Content", "Footer", "Header"]
+  },
+  {
+    "name": "Youtube",
+    "places": ["Description"]
+  },
+  {
+    "name": "Twitter",
+    "places": ["Tweet"]
+  }
+]
