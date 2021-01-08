@@ -67,7 +67,7 @@ function App() {
   return (
     <div className="grid-container">
       <h1>URL</h1>
-      <p>Enter URL of the campaign you want users to visit.</p>
+      <p>Enter URL you want users to visit.</p>
       <div className="ui input fluid">
         <input
           onChange={handleUrlChange}
@@ -78,7 +78,7 @@ function App() {
       </div>
 
       <h2>What is the campaign name?</h2>
-      <p>Enter the campaign name that you want to use to track.</p>
+      <p>Enter the campaign name that you want to use for tracking.</p>
       <div className="cell small-12 ">
         <input
           type="text"
@@ -88,7 +88,7 @@ function App() {
         />
       </div>
 
-      <h2>When will the campaign run?</h2>
+      <h2>When will this campaign run?</h2>
       <DatePicker
         selected={startDate}
         onChange={(date) => setStartDate(date)}
